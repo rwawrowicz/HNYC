@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,18 +10,55 @@
         android:src="@drawable/hpny"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:onClick="getCurrentYear"/>
+
 
     <TextView
+        android:id="@+id/happy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dancing_script_bold"
-        android:padding="20dp"
-        android:text="Hello World!"
-        android:textSize="46sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="8dp"
+        android:text="@string/happy"
+        android:textSize="72sp"
+        android:layout_alignParentEnd="true" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/thenew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script_bold"
+        android:padding="8dp"
+        android:text="@string/newer"
+        android:textSize="72sp"
+        android:layout_below="@id/happy"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script_bold"
+        android:padding="8dp"
+        android:text="@string/year"
+        android:textSize="72sp"
+        android:layout_below="@id/thenew"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/current_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dancing_script_bold"
+        android:padding="8dp"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="90sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/year"
+      />
+
+
+
+</RelativeLayout>

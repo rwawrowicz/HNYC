@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">hny</string>
+    <string name="app_name">Happy New Year Card</string>
+    <string name="happy">Happy</string>
+    <string name="newer">New</string>
+    <string name="year">Year!</string>
+
 </resources>
